@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sevillana&family=Zen+Maru+Gothic&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Sevillana", serif;
+}
+
+main {
+    background-image: url('./assets/backgroundPalacio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+        font-size: 55px;
+        color: white;
+    }
+
+    img {
+        width: 36vw;
+        transition: ease-in-out;
+    }
+
+    button {
+        width: 23vw;
+        height: 8vh;
+        background-color: #007BFF;
+        color: white;
+        font-size: 35px;
+        border: none;
+        border-radius: 50px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    main {
+        height: 93vh;
+        background-position: 48%;
+        
+        p {
+            font-size: 29px;
+            text-align: center;
+        }
+
+        img {
+            width: 90%;
+        }
+
+        button {
+            width: 50%;
+        }
+    }
+}
